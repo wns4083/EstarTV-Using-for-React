@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+/* Noto Sans KR*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/*Nanum Myeongjo*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway:ital@1&display=swap');
+/*Black Han Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* Dongle*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+/* Gugi*/
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+div, address, dd,dt, dl, section, figure, figcaption, span, h1, h2, h3, h4, h5, h6, p, textarea, title, a, link, img, li, ul, style, br, input, form, iframe, nav, footer, header, button{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  width: 100vw;
+  font-family: 'Noto Sans Korean';
 }

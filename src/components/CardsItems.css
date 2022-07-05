@@ -1,0 +1,139 @@
+.cardsItems{
+    width: 20%;
+    height: 900px;
+    border-radius: 20px;
+    margin: 0 5px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 1px -1px 1px 2px rgb(248, 248, 248);
+    
+}
+.cardsItems figure{
+    width: 100%;
+    height: 100%;
+    
+}
+.cardsItems img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+.cardsItems figcaption{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    
+}
+.cardsItems figcaption>h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.cardsItems figcaption p{
+    margin-top: 20px;
+}
+
+/*cardItems hover Event*/
+.cardsItems:hover img{
+    transform: scale(1.05);
+}
+.cardsItems .moveBlock{
+    position: absolute;
+    inset: 0;
+    display: block;
+    z-index: 10;
+    
+}
+.cardsItems .moveBlock::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    width: 20px;
+    height: 10px;
+    border: 2px solid #fff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+.cardsItems .moveBlock::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    width: 20px;
+    height: 10px;
+    border: 2px solid #fff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    
+}
+.cardsItems:hover .moveBlock::after{
+    border-color: blueviolet;
+    right: 90%;
+    width: 100%;
+    opacity: 1;
+    box-shadow: 0 0 50px 10px blueviolet;
+    
+}
+.cardsItems:hover .moveBlock::before{
+    border-color: blueviolet;
+    opacity: 1;
+    left: 90%;
+    width: 100%;
+    box-shadow: 0 0 50px 10px blueviolet;
+}
+/*cardItems hover Event horizental*/
+.cardsItems .moveBlock2{
+    position: absolute;
+    inset: 0;
+    display: block;
+    z-index: 10;
+    
+}
+.cardsItems .moveBlock2::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 10px;
+    height: 20px;
+    border: 2px solid #fff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+.cardsItems .moveBlock2::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 10px;
+    height: 20px;
+    border: 2px solid #fff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    
+}
+
+.cardsItems:hover .moveBlock2::after{
+    border-color: blueviolet;
+    bottom: 95%;
+    height: 100%;
+    opacity: 1;
+    box-shadow: 0 0 50px 10px blueviolet;
+
+}
+.cardsItems:hover .moveBlock2::before{
+    border-color: blueviolet;
+    opacity: 1;
+    top: 95%;
+    height: 100%;
+    box-shadow: 0 0 50px 10px blueviolet;
+}

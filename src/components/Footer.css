@@ -1,0 +1,77 @@
+dt, dd{
+    margin: 0;
+    padding: 0;
+}
+.footerContainer{
+    position: relative;
+    
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(0deg, rgb(40, 37, 37), #000000d6);
+}
+.footerWrap{
+    width: 600px;
+    box-sizing: border-box;
+    color: #fff;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.footerWrap dt{
+    float:left;
+    
+    font-size: 32px;
+    height: 42px;
+    margin-bottom: 10px;
+    line-height: 42px;
+}
+.footerWrap dd{
+    margin-bottom: 10px;
+    font-size: 24px;
+    height: 42px;
+    line-height: 2;
+    width: 70%;
+}
+.footerWrap address{
+    margin-bottom: 10px;
+    font-style: normal;
+}
+.footerWrap dt:nth-of-type(1){
+    float:none;
+    font-size: 32px;
+    font-weight: bold;
+    width:100%;
+    
+}
+.footerWrap>dt, .footerWrap>dd{
+    margin-right: 10px;
+    
+    
+}
+.iconSNS{
+    width: 260px;
+    height: 50px;
+    float: right;
+    color:#fff;
+    margin-right: 100px;
+}
+.iconSNS a{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 1s linear;
+}
+.iconSNS>a:hover{
+    color: rgb(215, 82, 82);
+    transform: rotateY(360deg);
+    
+}
+.iconSNS>a svg{
+    width: 100%;
+    height: 100%;
+}
+.iconSNS a:last-child{
+    margin-right: 0;
+}

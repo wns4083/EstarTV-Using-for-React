@@ -1,0 +1,77 @@
+.infomation{
+    width: 60vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.infoWrrap>.Introduction h2{
+    font-size: 48px;
+    font-family: 'Gugi';
+}
+.Introduction p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto sans Korean';
+}
+.info_left{
+    float:left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.info_left .topWord{
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Noto Sans Korean';
+}
+.info_left h2{
+    color: #fb5c5c;
+    font-size: 32px;
+    font-family: 'Gugi';
+}
+.info_left>.ceoImg img{
+    display: block;
+    width: 100%;
+    
+}
+.info_right{
+    float: right;
+    width: 50%;
+    padding-top: 23%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.info_right p:nth-of-type(1){
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/* Table Infomation */
+.tableInfo{
+    margin-top: 57%;
+    width: 100%;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 2px solid black;
+}
+.tableInfo th{
+    width: 30%;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 24px;
+    background-color: #f5f5f5;
+    color: #918f90;
+}
+tbody{
+    border-top: 5px soild black;
+}
+.tableInfo td{
+    padding-left: 50px;
+    border-bottom: 1px solid #45454555;
+    
+}

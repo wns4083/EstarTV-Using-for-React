@@ -1,0 +1,8 @@
+.slideWrp>.slider{
+    width: 100%;
+    height: 400px;
+}
+.slideWrp, .slide img{
+    width: 100%;
+    height: 350px;
+}

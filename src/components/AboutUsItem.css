@@ -1,0 +1,182 @@
+.aboutUsContainer{
+    width: 100vw !important;
+    overflow: hidden;
+    pointer-events: none;
+    padding-top: 300px;
+}
+.aboutUsContainer .photogaphyWrrap{
+    color: transparent;
+    -webkit-text-stroke: 1px #f9643a;
+    text-shadow: -9px -12px 0px black;
+    font-size: 14rem;
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed;
+    z-index: -99;
+    opacity: .2;
+    
+}
+.photogaphyWrrap h2:nth-of-type(1){
+    animation: photoMove 30s infinite linear ;
+    animation-delay: 2s;
+    margin: 50px 0;
+}
+.photogaphyWrrap h2:nth-of-type(2){
+    animation: photoMove 30s infinite linear;
+    animation-delay: 3s;
+    margin: 50px 0;
+}
+.photogaphyWrrap p{
+    animation: photoMove 30s infinite linear;
+    animation-delay: 4s;
+    margin: 50px 0;
+}
+.photogaphyWrrap .wordColor{
+    color: #f9643a;
+}
+.aboutUs{
+    width: 1880px; 
+    margin: 0 auto;
+}
+@keyframes photoMove{
+    0%{transform: translate3d(0%, 0px,0px);}
+    
+    100%{transform: translate3d(-50%, 0px, 0px);}
+}
+/*
+.aboutUsContainer .estartv{
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    padding: 100px;
+    box-shadow: 10px 12px 20px 5px #4b4a4f;
+}
+
+.estartv img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.estartv .estarInfo{
+    width:100%;
+    padding-top: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    font-weight: bolder;
+    font-size: 42px;
+}
+.estarInfo .infoTopText{
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #f82121;
+    font-size: 32px;
+    letter-spacing: 40px;
+    
+}*/
+.whatEstartv img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.whatEstartv>.textEstar{
+    width: 100%;
+    height: 300px;
+    padding: 50px auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9643a;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo';
+}
+.whatEstartv>.textEstar h2{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+.whatEstartv>.textEstar p{
+    width: 100%;
+    padding-left: 24px;
+    font-size: 32px;
+    text-align: center;
+}
+/* cardInfo*/
+[class*=cardItems]>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentsAboutInfoA{
+    width: 100vw;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: repeat(12, 142px);
+    grid-template-rows: repeat(6, 163px);
+    gap:16px 16px;
+    background: url('../../public/images/gridSection/gridA2.png') no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.contentsAboutInfoA .cardItemsA{
+    grid-area: 2/2/6/8;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s linear;
+   /*grid-row-start, grid-column-start, grid-row-end, grid-column-end*/
+}
+
+.cardItemsA>.cardItemsAInfo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px -1px 20px 1px rgb(241, 241, 241);
+    
+}
+.whatEstartv .contentsAboutInfoB{
+    width: 100vw;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: repeat(12, 142px);
+    grid-template-rows: repeat(6, 163px);
+    gap:16px 16px;
+    background: url('../../public/images/aboutUs/aboutback2.jpg') no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.contentsAboutInfoB .cardItemsB{
+    grid-area: 2/6/6/12;
+    position: relative;
+    /*grid-row-start, grid-column-start, grid-row-end, grid-column-end*/
+}
+.cardItemsB>.cardItemsBInfo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px -1px 20px 1px rgb(241, 241, 241);
+}

@@ -1,0 +1,85 @@
+.AffiliateSection{
+    margin: 0 auto;
+    
+}
+.AffiliateSubject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.AffiliateSubject>h2{
+    color: rgb(22, 20, 20);
+    text-align: center;
+    font-size: 104px;
+    font-family: 'Gugi';
+}
+.AffiliateWrrap{
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px 16px;
+    overflow: hidden;
+    background-color: #1e1f1e;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+[class*=item]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+[class*=item]:nth-child(n+7):nth-child(-n+12){
+    
+    grid-row-start: 2;
+}
+.affiliateItemNames{
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.affiliateItemNames h3{
+    position: relative;
+    padding: 20px;
+    
+    color: #fff;
+    transition: all .2s ease-out;
+    font-family: 'Black Han Sans';
+    font-weight: 300;
+    border: 3px solid #eea123;
+}
+/*
+.affiliateItemNames>h3::after{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content:'';
+    border: 3px solid #eea123;
+    transform: scaleX(1);
+    transition: all 250ms ease-in-out;
+
+}*/
+
+[class*=item]:hover h3{
+    transform: scale(1.2) rotate(10deg);
+    color: #61c7f6;
+    
+}
+[class*=item]:hover h3:nth-child(n+7):nth-child(-n+12){
+    transform: scale(1.2) rotate(-10deg);
+}
+@keyframes infiniteText{
+    from {transform: translateX(0%);
+    }
+    to{transform: translateX(-1000%);
+
+    }
+}
